@@ -476,8 +476,9 @@ module StateMachines
       end
 
       # Runs state events around the machine's :save action
-      def around_save(object)
-        object.class.state_machines.transitions(object, action).perform { yield }
+      def around_save(object, &)
+        # Pass fiber: false to avoid deadlocks with ActiveRecord's LoadInterlockAwareMonitor
+        object.class.state_machines.transitions(object, action, fiber: false).perform(&)
       end
 
       # Creates a scope for finding records *with* a particular state or
