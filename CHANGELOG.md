@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.100.0](https://github.com/state-machines/state_machines-activerecord/compare/state_machines-activerecord/v0.100.0...state_machines-activerecord/v0.100.0) (2026-01-06)
+
+
+### Features
+
+* Add Rails enum integration with automatic conflict resolution ([#122](https://github.com/state-machines/state_machines-activerecord/issues/122)) ([08c7650](https://github.com/state-machines/state_machines-activerecord/commit/08c765029c02cd9c83768172279ee8a78b641f7e))
+
+
+### Bug Fixes
+
+* bump state_machines-activemodel to 0.101.0 and test Rails 8.1.0 ([#128](https://github.com/state-machines/state_machines-activerecord/issues/128)) ([8794d30](https://github.com/state-machines/state_machines-activerecord/commit/8794d30cd0abee26b9b0f6d4eabd5cb95f409c59))
+
 ## [0.100.0](https://github.com/state-machines/state_machines-activerecord/compare/state_machines-activerecord/v0.100.0...state_machines-activerecord/v0.100.0) (2025-07-17)
 
 
